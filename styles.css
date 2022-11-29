@@ -49,7 +49,7 @@ section.hero-intro {
     background-repeat: no-repeat;
     background-color: var(--very-pale-cyan);
     padding: 4rem 3rem;
-    min-height: 100vh;
+    min-height: 95vh;
 }
 
 .hero-intro img {
@@ -84,29 +84,20 @@ section.hero-intro {
 /* Button styling */
 .header button {
     background-color: #fff;
-
-}
-
-.header button a {
     color: var(--very-dark-cyan);
     font-weight: 700;
-}
 
+}
 button {
     background-color: var(--pink);
     padding: 10px 35px;
     border: none;
     border-radius: 23px;
-    /* box-shadow: 0px 6px 10px hsl(217, 13%, 87%); */
-
-}
-
-button a {
-    text-decoration: none;
     color: #fff;
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    /* box-shadow: 0px 6px 10px hsl(217, 13%, 87%); */
 
 }
 
