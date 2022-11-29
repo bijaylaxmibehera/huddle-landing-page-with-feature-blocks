@@ -115,6 +115,7 @@ button:hover {
     opacity: 0.7;
     box-shadow: 0px 10px 15px hsl(217deg 13% 87%);
 }
+
 /* 
 
 card section 
@@ -200,11 +201,13 @@ section.details {
     color: #fff;
     padding: 6rem 4rem 4rem;
 }
-.footer img.f-logo{
+
+.footer img.f-logo {
     opacity: 0.9;
     max-width: 150px;
     height: auto;
 }
+
 .f-content {
     margin-top: 1.5rem;
     display: grid;
@@ -220,6 +223,9 @@ section.details {
     row-gap: 1.5rem;
     display: grid;
     opacity: 0.7;
+}
+.hero-contact img{
+    padding-top: 5px;
 }
 
 .fnav-list ul {
@@ -285,4 +291,112 @@ small {
     display: block;
     text-align: end;
     opacity: 0.7;
+}
+
+
+@media only screen and (max-width:425px) {
+    /* logo and header part */
+    header {
+        padding: 30px 10px;
+    }
+    header img{
+        width: 110px;
+    }
+    .header button{
+        padding: 5px 20px;
+    }
+    .header button a{
+        font-size: 12px;
+    }
+    /* into section */
+    section.hero-intro {
+        flex-direction: column;
+        background-image: url(./images/bg-hero-mobile.svg);
+        background-repeat: no-repeat;
+        padding: 7rem 0 2rem;
+    }
+    section.hero-intro button{
+        padding: 12px 53px;
+    }
+    .hero-intro img {
+        max-width: 90%;
+        margin: auto;
+    }
+    .hero-info{
+        text-align: center;
+        padding: 20px;
+    }
+    .hero-info h1{
+        font-size: 24px;
+        max-width: 100%;
+    }
+    .hero-info p{
+        max-width: 100%;
+    }
+
+    /* card part */
+    section.details {
+        padding: 4rem 1rem 10.25rem;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 2.4rem 1.7rem;
+
+    }
+
+    .card-img img {
+        max-width: 100%;
+        margin: 20px auto 50px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info h2 {
+        font-size: 20px;
+    }
+
+    .info p {
+        font-size: 13px;
+        max-width: 100%;
+        margin: auto;
+        line-height: 24px;
+    }
+    .build-community{
+        padding: 1.3rem 0.6rem;
+    }
+    .build-community h2{
+        font-size: 15px;
+    }
+
+    /* footer part */
+    .footer{
+        padding: 6rem 1rem 2rem;
+    }
+    .f-content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+   
+    .fnav-list ul {
+        grid-template-rows: repeat(6, 1fr);
+        grid-auto-flow: column;
+        max-width:100%;
+        row-gap: 1rem;
+        margin: 1rem 0 3.5rem 0;
+    }
+    .f-content p,.fnav-list ul li a{
+        font-size: 14px;
+    }
+    .social ul{
+        justify-content: center;
+    }
+    small{
+        text-align: center;
+        font-size: 12px;
+    }
 }
